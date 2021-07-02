@@ -12,7 +12,7 @@ import java.io.IOException;
  * Hello world!
  *
  */
-public class App 
+public class Decoder
 {
     private static String decodeQRCode(File qrCodeimage) throws IOException {
         BufferedImage bufferedImage = ImageIO.read(qrCodeimage);
@@ -30,7 +30,8 @@ public class App
 
     public static void main(String[] args) {
         try {
-            File file = new File("qr_code_reader_in_java.png");
+            System.out.println("Decoding: "+args[0]);
+            File file = new File(args[0]);
             String decodedText = decodeQRCode(file);
             if(decodedText == null) {
                 System.out.println("No QR Code found in the image");
