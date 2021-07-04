@@ -54,7 +54,7 @@ public class QRConverterImpl implements QRConverter {
 
             //prints if the QR code is generated
             System.out.println("QR Code created successfully.");
-            return new File(path);
+            return file;
         } catch (WriterException | IOException e) {
             throw new RuntimeException(e);
         }

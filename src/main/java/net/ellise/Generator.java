@@ -25,7 +25,8 @@ public class Generator {
 
         public static void main(String args[]) throws WriterException, IOException, NotFoundException {
 //data that we want to store in the QR code
-            String str= "THE HABIT OF PERSISTENCE IS THE HABIT OF VICTORY.";
+            //String str= "THE HABIT OF PERSISTENCE IS THE HABIT OF VICTORY.";
+            String str= "http://192.168.170.125/refund/5";
 //path where we want to get QR Code
             System.out.println("Encoding file: "+args[0]);
             String path = args[0];
