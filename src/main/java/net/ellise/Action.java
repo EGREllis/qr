@@ -4,7 +4,9 @@ import java.io.File;
 
 public enum Action {
     SELL("%1$s/sell/%2$d", "%1$s/sell%2$d.png"),
-    REFUND("%1$s/refund/%2$d", "%1$s/refund%2$d.png");
+    REFUND("%1$s/refund/%2$d", "%1$s/refund%2$d.png"),
+    REMOVE_PRODUCT("%1$s/removeProduct/%2$d", "%1$s/removeProduct%2$d.png"),
+    REMOVE_PRICE("%1$s/removePrice/%2$d", "%1$s/removePrice%2$d.png");
 
     private final String urlFormat;
     private final String filePath;
